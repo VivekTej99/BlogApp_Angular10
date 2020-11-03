@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-sm navbar-light">
+    <a href="/" class="navbar-brand">
+        <h3 class="text-danger">Computer<small class="text-success">&nbsp;Magics</small></h3>
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#NavDrop">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="NavDrop">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a [routerLink]="/dashboard" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]='/login' class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+                <a href="/signup" class="nav-link">Sign Up</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbar-drop">Dropdown</a>
+                <div class="dropdown-menu">
+                    <a href="/" class="dropdown-item">HOME</a>
+                    <a href="/" class="dropdown-item">HOME</a>
+                    <a href="/" class="dropdown-item">HOME</a>
+                </div>
+            </li>
+        </ul>
+        <form action="" class="inline-form ">
+            <select name="month" class="form-control mr-2">
+                <option *ngFor="let month of months">{{ month }}</option>
+            </select>
+        </form>
+        <div class="float-right text-info ml-4">
+            {{ Date }}
+        </div>
+    </div>
+</nav>

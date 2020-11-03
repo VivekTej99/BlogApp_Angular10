@@ -1,0 +1,35 @@
+    <div class="row">
+        <div class="col-lg-6 col-md-6 push-lg-3 push-md-3">
+            <ng-container *ngIf="isAvailable; else elseTemplate">
+                <div class="alert alert-success text-align-center">
+                    <p><strong>Logged in successfully</strong></p>
+                </div>
+            </ng-container>
+            <ng-template #elseTemplate>
+                <div class="alert alert-danger">
+                    <p><strong>Login atempt unsuccesful</strong></p>
+                </div>
+            </ng-template>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <button class="btn btn-success btn-md mr-2 mb-1" (click)="handleLogin()">Login</button>
+            <button class="btn btn-info btn-md mr-2 mb-1" (click)="handleLogout()">Log Out</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <app-card [featureSet] = featureOne></app-card>
+        </div>
+        <div class="col-md-3">
+            <app-card [featureSet] = featureTwo></app-card>
+        </div>
+        <div class="col-md-3">
+            <app-card [featureSet] = featureOne></app-card>
+        </div>
+        <div class="col-md-3">
+            <app-card [featureSet] = featureThree></app-card>
+        </div>
+    </div>
