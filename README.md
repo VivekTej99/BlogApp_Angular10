@@ -2,8 +2,8 @@
 
 
 # Prerequisites
-  -Nodejs
-  -Angular10
+  - Nodejs
+  - Angular10
   
 # Setup
   - Clone this repo..
