@@ -1,14 +1,14 @@
-#BlogApp_Angular
+# BlogApp_Angular
 
 
-#Prerequisites
+# Prerequisites
   -Nodejs
   -Angular10
   
-#Setup
+# Setup
   - Clone this repo..
   - cd myApp
-#How to run
+# How to run
   - ng serve
 __
 
